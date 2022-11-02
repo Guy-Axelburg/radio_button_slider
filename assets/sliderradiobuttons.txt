@@ -1,0 +1,18 @@
+Create an app that meets the following conditions:
+
+1.  That has a start page.  That has several radio buttons. 
+    The radio buttons will take you to different pages
+    
+2.  A page that reads in a text file and displays it on the page
+
+3.  A page that allows you to tilt  an image left or right using slider
+
+4.  A page that allows you to  scale an image or widget of your choice
+    with a slider.
+    (Widget must not be just a plain box - box with text and/or image ok)
+    Hint: use the transform.scale
+
+5.  A page that allows you to  move an image or widget of your choice
+     accross  a page with a slider.
+    (Widget must not be just a plain box - box with text and/or image ok)
+    Hint: use the transform.translate
