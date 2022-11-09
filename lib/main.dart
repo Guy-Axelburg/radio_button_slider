@@ -6,7 +6,7 @@ void main() {
     "/TextPage": (BuildContext context) => const TextPage(),
     "/ImageTilt":(BuildContext context) => const ImageTilt(),
     "/ImageRotate":(BuildContext context) => const ImageRotate(),
-    "/Imagemove":(BuildContext context) => const ImageMove();
+    "/Imagemove":(BuildContext context) => const ImageMove()
   }));
 }
 
@@ -31,14 +31,14 @@ class _HomePage extends State<HomePage> {
   }
 }
 
-class SecondPage extends StatefulWidget {
-  const SecondPage({Key? key}) : super(key: key);
+class TextPage extends StatefulWidget {
+  const TextPage({Key? key}) : super(key: key);
 
   @override
-  _SecondPage createState() => _SecondPage();
+  _TextPage createState() => _TextPage();
 }
 
-class _SecondPage extends State<SecondPage> {
+class _TextPage extends State<TextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,9 +47,54 @@ class _SecondPage extends State<SecondPage> {
   }
 }
 
+class ImageTilt extends StatefulWidget {
+  const ImageTilt({Key? key}) : super(key: key);
 
-class ThirdPage extends StatelessWidget {
+  @override
+  _ImageTilt createState() => _ImageTilt();
+}
 
-  const ThirdPage({Key? key}) : super(key: key);
-  Widget goHome(BuildContext context){
-    return(Column(
+class _ImageTilt extends State<TextPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+            title: const Text("Pick a stooge")));
+  }
+}
+
+
+
+class ImageRotate extends StatefulWidget {
+  const ImageRotate({Key? key}) : super(key: key);
+
+  @override
+  _ImageRotate createState() => _ImageRotate();
+}
+
+class _ImageRotate extends State<TextPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+            title: const Text("Pick a stooge")));
+  }
+}
+
+
+
+class ImageMove extends StatefulWidget {
+  const ImageMove({Key? key}) : super(key: key);
+
+  @override
+  _ImageMove createState() => _ImageMove();
+}
+
+class _ImageMove extends State<TextPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+            title: const Text("Pick a stooge")));
+  }
+}
